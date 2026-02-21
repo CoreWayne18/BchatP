@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueMesh | Encrypted P2P</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔵 BlueMesh</h1>
+            <div id="status-dot" class="disconnected"></div>
+            <span id="status-text">Offline</span>
+        </header>
+
+        <div id="chat-log" class="chat-box">
+            <div class="system-msg">Initializing local vault...</div>
+        </div>
+
+        <div class="controls">
+            <button id="connect-btn">Connect Peer</button>
+            <div class="input-group">
+                <input type="text" id="msg-input" placeholder="Type an encrypted message..." disabled>
+                <button id="send-btn" disabled>Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
